@@ -3,7 +3,7 @@
     v-if="blogPosts"
     class="main"
   >
-    <h1 class="title text-left">Blog</h1>
+    <h1 class="title text-left">Reviews</h1>
     <ul
       v-for="(blogPost, index) in blogPosts"
       :key="index"

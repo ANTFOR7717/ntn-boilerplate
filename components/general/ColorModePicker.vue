@@ -2,6 +2,9 @@
   <div class="fixed bottom-0 left-0 m-3">
     <component :is="`icon-${color}`" @click="changeColorMode" title="Toggle background color" />
   </div>
+  <div class="fixed bottom-0 right-0 m-3">
+    <component :is="`icon-${color}`" @click="changeColorMode" title="Toggle background color" />
+  </div>
 </template>
 
 <script>

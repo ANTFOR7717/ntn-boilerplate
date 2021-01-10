@@ -35,8 +35,10 @@ collections:
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
           # - { label: Site Email, name: siteemail, widget: string, required: false }
-  - name: 'blog'
-    label: 'Blog'
+
+
+  - name: 'reviews'
+    label: 'Reviews'
     # identifier_field: name
     folder: 'assets/content/blog'
     create: true
@@ -50,10 +52,12 @@ collections:
       - { label: 'Rating', name: 'rating', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'projects'
+
+
+  - name: 'products'
     # identifier_field: name
-    label: 'Projects'
-    label_singular: 'Project'
+    label: 'Products/Subscriptions'
+    label_singular: 'Product/Subscription'
     folder: 'assets/content/projects'
     create: true
     format: 'json'
@@ -65,13 +69,10 @@ collections:
           name: 'project_type',
           widget: 'select',
           default: 'story',
-          options: [{ label: 'Story', value: 'story' }, { label: 'Photo', value: 'photo' }],
+          options: [{ label: 'Subscription', value: 'subscription' }, { label: 'Product', value: 'product' }],
         }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'Content', name: 'body', widget: 'markdown', required: false }
-      - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
+      - { label: 'Price', name: 'title', widget: 'string' }
       - {
           label: 'Gallery',
           name: 'gallery',
