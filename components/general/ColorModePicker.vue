@@ -1,9 +1,13 @@
 <template>
+  <div>
   <div class="fixed bottom-0 left-0 m-3">
     <component :is="`icon-${color}`" @click="changeColorMode" title="Toggle background color" />
   </div>
   <div class="fixed bottom-0 right-0 m-3">
-    <component :is="`icon-${color}`" @click="changeColorMode" title="Toggle background color" />
+    <a href='https://droofin.netlify.app/admin'>
+    <img src='@/components/icons/gear.svg' alt='admin login' height='50px' width='50px'>
+    </a>
+  </div>
   </div>
 </template>
 

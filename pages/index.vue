@@ -2,7 +2,7 @@
   <div class="main text-center flex flex-col items-center justify-center">
     <!-- <logo /> -->
     <h1 class="title">Droofin - Drinks Delivered</h1>
-    <h2 class="subtitle">by AF Resolutions</h2>
+    <h2 class="subtitle">by <a href='https://afresolutions.com'>AF Resolutions</a></h2>
   </div>
 </template>
 
