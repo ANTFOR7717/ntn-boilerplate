@@ -11,17 +11,17 @@ public_folder: /img
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
-  - label: 'Site settings'
-    name: 'site'
+  - label: 'SEO Settings'
+    name: 'meta'
     files:
-      - label: 'Info'
+      - label: 'Title | Description'
         name: 'info'
         file: 'assets/content/site/info.json'
         format: 'json'
         editor:
           preview: false
         fields:
-          - { label: Site Name, name: sitename, widget: string, hint: 'This is used for the site title' }
+          - { label: Site Title, name: sitetitle, widget: string, hint: 'This is used for the site title' }
           - {
               label: Site Description,
               name: sitedescription,
